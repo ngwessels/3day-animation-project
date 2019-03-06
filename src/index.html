@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Test-webpack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <div class="sky">
@@ -19,8 +21,30 @@
         <div class="x2">
             <div class="cloud"></div>
         </div>
-        <div class="vulture">
-          <img src="./imgs/vulture.jpg" alt="vulture" height="20" width="33">
+        <div class="w3-container">
+          <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button> -->
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4">
+              <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Griffon Vulture</h2>
+              </header>
+              <div class="w3-container">
+                <p>The griffon vulture is a large Old World vulture in the bird of prey family Accipitridae. It is also known as the Eurasian griffon. It is not to be confused with a different species, Rüppell's griffon vulture. It is closely related to the white-backed vulture.
+                -Altitude - 37,000ft
+                -Wingspan: 7.5 – 9.2 ft.
+                -Family: Accipitridae
+                -Conservation status: Least Concern (Population increasing) Encyclopedia of Life
+                -Scientific name: Gyps fulvus
+                -Mass: Female: 14 – 25 lbs, Male: 14 – 23 lbs</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="vulture">
+            <a  id="vulture-button"></a><img src="./imgs/vulture.jpg" id="vulture-photo" alt="vulture" height="20" width="33" onclick="document.getElementById('id01').style.display='block'">
+          </div>
         </div>
 
         <div class="x3">
@@ -68,7 +92,26 @@
             <img class="moto" src="./imgs/buell.png" alt="moto" height="30" width="30">
             <img class="suv" src="./imgs/suv.png" alt="suv" height="30" width="60">
           </div>
-
+          <!-- modal work  -->
+          <div class="w3-container">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-teal">
+                  <span onclick="document.getElementById('id01').style.display='none'"
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>Modal Header</h2>
+                </header>
+                <div class="w3-container">
+                  <p>Some text..</p>
+                  <p>Some text..</p>
+                </div>
+                <footer class="w3-container w3-teal">
+                  <p>Modal Footer</p>
+                </footer>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
