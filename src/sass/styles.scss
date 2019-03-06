@@ -129,6 +129,7 @@ top: 1390px;
 	position:absolute;
 	bottom:0;
 	box-shadow:0 1px 16px rgba(111, 35, 51, 0.4) inset;
+  z-index: 1;
 }
 
 .street-stripe {
@@ -216,7 +217,7 @@ top: 1390px;
     background-color: #607AA0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .blue-ray {
@@ -225,7 +226,7 @@ top: 1390px;
     position: absolute;
 	right:2%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -244,7 +245,7 @@ top: 1390px;
     position: absolute;
 		right:20%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -263,7 +264,7 @@ top: 1390px;
     position: absolute;
 		right:12%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -282,7 +283,7 @@ top: 1390px;
     position: absolute;
 		right:12%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -302,7 +303,7 @@ top: 1390px;
     position: absolute;
 		right:29%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -321,7 +322,7 @@ top: 1390px;
     position: absolute;
 		right:34%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -340,7 +341,7 @@ top: 1390px;
     position: absolute;
 		right:37%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -359,7 +360,7 @@ top: 1390px;
     position: absolute;
 		right:42%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -378,7 +379,7 @@ top: 1390px;
     position: absolute;
 		right:48%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -397,7 +398,7 @@ top: 1390px;
     position: absolute;
 		right:55%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -416,7 +417,7 @@ top: 1390px;
     position: absolute;
 	right:48%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -435,7 +436,7 @@ top: 1390px;
     position: absolute;
 	right:60%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -454,7 +455,7 @@ top: 1390px;
     position: absolute;
 	right:70%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -473,7 +474,7 @@ top: 1390px;
     position: absolute;
 	right:74%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -492,7 +493,7 @@ top: 1390px;
     position: absolute;
 	right:80%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -511,7 +512,7 @@ top: 1390px;
     position: absolute;
 	right:90%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -530,7 +531,7 @@ top: 1390px;
     position: absolute;
 	right:100%;
     transform: rotate(10deg);
-    top: -8%;
+    top: -5%;
 	background: #f7e6d3; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7e6d3 0%, #607aa0 80%, #607aa0 82%, #607aa0 84%, #607aa0 100%, #607aa0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e6d3), color-stop(80%,#607aa0), color-stop(82%,#607aa0), color-stop(84%,#607aa0), color-stop(100%,#607aa0), color-stop(100%,#607aa0)); /* Chrome,Safari4+ */
@@ -819,7 +820,7 @@ top: 1390px;
     background-color: transparent;
     position: absolute;
     left: 40%;
-    top: -10%;
+    top: -5%;
     box-shadow: 1vmin 2vmin 25vmin #F5DAF4;
 }
 
@@ -871,6 +872,7 @@ top: 1390px;
   width: 100%;
   height: 100vh;
   background-color: skyblue;
+  z-index: 2;
 }
 
 #many-crabs {
@@ -882,29 +884,6 @@ html {
   // background: hsl(320,50%,15%);
 }
 
-#volcano{
-  display: flex;
-  justify-content: center;
-  background-image: url(../imgs/floor.png);
-  text-align: center;
-  bottom: -390px;
-    position: relative;
-    width: 256px;
-    height: 257px;
-    overflow: hidden;
-    display: block;
-    // margin: 0 auto;
-}
-#volcano::before{
-    width: 256px;
-    height: 12850px;
-    background-image: url('https://www.ge.com/digitalvolcano/assets/images/loader_04_sprite.png');
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    animation: 2.08333s steps(50, end) infinite sprite-animation;
-}
 @keyframes sprite-animation{
   from{
     transform:translate3d(0, 0, 0)
@@ -1048,13 +1027,53 @@ html {
 	top: -90px;
 }
 
-#volcano {
-  width: 100vw;
-  #floor {
-    width: 100vw;
-    height: auto;
-    image-repeat: repeat;
-    position: absolute;
-  }
+#volcano{
+  display: flex;
+  justify-content: center;
+  // background-image: url(../imgs/floor.png);
+  text-align: center;
+  bottom: -390px;
+  // position: relative;
+  width: 256px;
+  height: 257px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  bottom: -510px;
+  z-index: 1;
+}
+#volcano::before{
+  width: 256px;
+  height: 12850px;
+  background-image: url('https://www.ge.com/digitalvolcano/assets/images/loader_04_sprite.png');
+  content: '';
+  display: block;
+  // position: absolute;
+  top: 0;
+  animation: 2.08333s steps(50, end) infinite sprite-animation;
+}
 
+.frame{
+  position: relative;
+  bottom: -280px;
+}
+
+#floor {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+  width: 100%;
+  // flex: display;
+  // justify-content: flex-end;
+  z-index: 0;
+  position: absolute;
+  img {
+    width: 50vw;
+
+  }
+}
+
+.ocean-floor {
+  position: relative;
 }
