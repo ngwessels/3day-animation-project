@@ -3,9 +3,9 @@ body {
 }
 
 .sky {
-  background-color: skyblue;
+  // background-color: skyblue;
   width: 100%;
-  height: 627px;
+  height: 127vh;
 }
 
 @mixin animate($name, $time) {
@@ -28,11 +28,13 @@ body {
 @include flies(vulture, 0px);
 @include flies(suv, 0px);
 @include flies(moto, 0px);
+@include flies(eagle, 0px);
 
 $planeSpeed: random(20) + 5;
 $vultureSpeed: random(20) + 40;
 $suvSpeed: random(20) + 3;
 $motoSpeed: random(20) +1;
+$eagleSpeed: random(20) +60;
 
 .plane{
   display: flex;
@@ -47,29 +49,40 @@ $motoSpeed: random(20) +1;
   display: flex;
   overflow: hidden;
   justify-content: center;
+  display: inline-block;
   // top: 60px;
 
   @include animate(vulture, $vultureSpeed + s);
 }
 
 .eagle {
-
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  display: inline-block;
+@include animate(eagle,$eagleSpeed + s);
 }
 
 .stork {
-
+  transform: rotateY(180deg); // Rotate 180 degrees along the x-axis
+  display: inline-block;
 }
 
 .falcon {
-
+  display: inline-block;
 }
 
 .goose {
-
+  display: inline-block;
 }
 
 .jay {
-
+  transform: rotateY(180deg); // Rotate 180 degrees along the x-axis
+  display: inline-block;
+}
+.mallard {
+  transform: rotateY(180deg); // Rotate 180 degrees along the x-axis
+  display: inline-block;
 }
 
 .ground{
@@ -104,7 +117,7 @@ $motoSpeed: random(20) +1;
 .ocean {
 position:absolute;
 width: 100vw;
-top: 1390px;
+top: 1660px;
 }
 
 .sky {
@@ -123,13 +136,13 @@ top: 1390px;
 
 .street {
 	background:#7a7a7a	 url(data:image/png;base64,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);
-  top: 1317px;
+  top: 1580px;
 	height:80px;
 	width:102%;
 	position:absolute;
 	bottom:0;
 	box-shadow:0 1px 16px rgba(111, 35, 51, 0.4) inset;
-  z-index: 1;
+  z-index: 1000000;
 }
 
 .street-stripe {
@@ -868,11 +881,15 @@ top: 1390px;
 
 
 #chicago {
-  background-image: url("http://www.davisrousseau.com/wp-content/uploads/2017/01/chicago-skyline-new-1.svg");
   width: 100%;
-  height: 100vh;
-  background-color: skyblue;
-  z-index: 2;
+  z-index: 8;
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 20px;
+  img{
+    width: 100%;
+  }
+  // background-color: skyblue;
 }
 
 #many-crabs {
@@ -1088,4 +1105,260 @@ html {
 
 .ocean-floor {
   position: relative;
+}
+
+
+
+
+
+
+
+
+
+.ciel, .soleil, .lune, .terre, .etoile span{
+  animation-delay: 8s;
+  animation-duration:50s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  position: relative;
+}
+.ciel{
+  height:140vh;
+  background-color: #72627C;
+  animation-name:jourNuit;
+}
+.soleil{
+  width:100px;
+  height:100px;
+  background-color:#f39f18;
+  border-radius:50%;
+  position: absolute;
+  top:70%;
+  left:10%;
+  box-shadow: 0px 0px 52px 2px rgba(255,170,0,1);
+  animation-name:jour;
+  z-index: -1;
+}
+
+.lune{
+  width:100px;
+  height:100px;
+  background-color:#F4FEFE;
+  border-radius:50%;
+  position:absolute;
+  top:70%;
+  left:80%;
+  box-shadow: 0px 0px 30px 0px rgba(250,250,250,1);
+  animation-name:nuit;
+  z-index:-1;
+}
+
+.etoile span{
+  color:#72627C;
+  position:absolute;
+  z-index:-2;
+  animation-name:etoile;
+}
+.etoile span:first-child{
+  top:10%;
+  left:20%;
+}
+.etoile span:nth-child(2){
+  top:20%;
+  left:30%;
+}
+.etoile span:nth-child(3){
+  top:40%;
+  left:35%;
+}
+.etoile span:nth-child(4){
+  top:15%;
+  left:10%;
+}
+.etoile span:nth-child(5){
+  top:40%;
+  left:4%;
+}
+.etoile span:nth-child(6){
+  top:35%;
+  left:24%;
+}
+.etoile span:nth-child(7){
+  top:20%;
+  left:50%;
+}
+.etoile span:nth-child(8){
+  top:35%;
+  left:45%;
+}
+.etoile span:nth-child(9){
+  top:10%;
+  left:42%;
+}
+.etoile span:nth-child(10){
+  top:40%;
+  left:60%;
+}
+.etoile span:nth-child(11){
+  top:35%;
+  left:58%;
+}
+.etoile span:nth-child(12){
+  top:7%;
+  left:68%;
+}
+.etoile span:nth-child(13){
+  top:25%;
+  left:72%;
+}
+.etoile span:nth-child(14){
+  top:20%;
+  left:78%;
+}
+.etoile span:nth-child(15){
+  top:35%;
+  left:75%;
+}
+.etoile span:nth-child(16){
+  top:30%;
+  left:90%;
+}
+.etoile span:nth-child(17){
+  top:2%;
+  left:89%;
+}
+.etoile span:nth-child(18){
+  top:24%;
+  left:95%;
+}
+.etoile span:nth-child(19){
+  top:12%;
+  left:92%;
+}
+.etoile span:nth-child(20){
+  top:18%;
+  left:65%;
+}
+.etoile span:nth-child(21){
+  top:12%;
+  left:60%;
+}
+.etoile span:nth-child(22){
+  top:5%;
+  left:75%;
+}
+.etoile span:nth-child(23){
+  top:20%;
+  left:8%;
+}
+.etoile span:nth-child(24){
+  top:10%;
+  left:5%;
+}
+.etoile span:nth-child(25){
+  top:28%;
+  left:15%;
+}
+.etoile span:nth-child(26){
+  top:12%;
+  left:32%;
+}
+.etoile span:nth-child(27){
+  top:2%;
+  left:28%;
+}
+.etoile span:nth-child(28){
+  top:20%;
+  left:38%;
+}
+.etoile span:nth-child(29){
+  top:8%;
+  left:36%;
+}
+.etoile span:nth-child(30){
+  top:4%;
+  left:48%;
+}
+.etoile span:nth-child(31){
+  top:30%;
+  left:52%;
+}
+.etoile span:nth-child(32){
+  top:8%;
+  left:55%;
+}
+.etoile span:last-child{
+  top:15%;
+  left:80%;
+}
+.terre{
+  height:20vh;
+  background-color: #E9AD88;
+  position:relative;
+  top:80vh;
+  animation-name:verdure;
+  z-index:3;
+}
+
+@keyframes jourNuit{
+  0%{background-color: #72627C; z-index: -3;}/*lever soleil*/
+  10%{background-color: #E9AD88;}
+  20%{background-color: #7a9eb6;}
+  30%{background-color:#77B5FE;}
+  40%{background-color: #CC763F;}
+  50%{background-color: #E06632;}/*coucher soleil*/
+  60%{background-color: #75423C;}/*début nuit*/
+  70%{background-color: #331C1A;}
+  80%{background-color: #000000;}
+  90%{background-color: #000000;}
+  100%{background-color: #463D4C; z-index: -3;}/*fin nuit*/
+}
+@keyframes jour{
+  0%{ top:70%; left:10% ;background-color:#f39f18; box-shadow: 0px 0px 52px 2px rgba(255,170,0,1);}/*lever soleil*/
+  10%{ top:40%; background-color:#F3F990; box-shadow: 0px 0px 40px 18px rgba(245,233,95,1);}
+  20%{ top:20%; background-color:F3F9D2; box-shadow: 0px 0px 35px 8px rgba(250,241,147,1);}
+  30%{ top:30%; left:50%; background-color:F3F9D2; box-shadow: 0px 0px 100px 20px rgba(250,241,147,1);}
+  40%{ top:50%; background-color:#F3F990; box-shadow: 0px 0px 52px 14px rgba(245,233,95,1);}
+  50%{ top:70% ; left:70% ;background-color:#f39f18; box-shadow: 0px 0px 70px 2px rgba(250,115,42,1);}/*coucher soleil*/
+  60%{ top:80% ; left:80%; box-shadow: 0px 0px 0px 0px rgba(250,115,42,1);}/*début nuit*/
+  90%{ top:80% ; box-shadow: 0px 0px 0px 0px rgba(250,115,42,1);}
+  100%{ top:80% ; left:10% ;background-color:#f39f18; box-shadow: 0px 0px 0px 2px rgba(255,170,0,1);}/*fin nuit*/
+}
+
+
+@keyframes nuit{
+  0%{ top:80%; left:80%; box-shadow: 0px 0px 0px 0px rgba(250,250,250,1);}/*lever soleil*/
+  50%{ top:80%; left:10%;  box-shadow: 0px 0px 0px 0px rgba(250,250,250,1);}/*coucher soleil*/
+  60%{ top:40%; box-shadow: 0px 0px 50px 5px rgba(250,250,250,1);}/*début nuit*/
+  70%{ top:20%; box-shadow: 0px 0px 30px 12px rgba(250,250,250,1);}
+  80%{ top:30%; left:50%; box-shadow: 0px 0px 100px 18px rgba(250,250,250,1);}
+  90%{ top:50%; box-shadow: 0px 0px 75px 12px rgba(250,250,250,1);}
+  100%{ top:80%; left:80%; box-shadow: 0px 0px 20px 0px rgba(250,250,250,1);}/*fin nuit*/
+}
+
+@keyframes verdure{
+  0%{background-color: #608E69;}/*lever soleil*/
+  10%{background-color: #5A9D59;}
+  20%{background-color: #3A9D23;}
+  30%{background-color: #3A9D23;}
+  40%{background-color: #8A9323;}
+  50%{background-color: #585713;}/*coucher soleil*/
+  60%{background-color: #3D3D0D;}/*début nuit*/
+  70%{background-color: #071204;}
+  80%{background-color: #071204;}
+  90%{background-color: #071204;}
+  100%{background-color: #608E69;}/*fin nuit*/
+}
+@keyframes etoile{
+  0%{color: #72627C;}/*lever soleil*/
+  10%{color: #E9AD88;}
+  20%{color: #7a9eb6;}
+  30%{color:#77B5FE;}
+  40%{color: #CC763F;}
+  50%{color: #E06632;}/*coucher soleil*/
+  60%{color: #EFD242;}/*début nuit*/
+  70%{color: #EFE7B6;}
+  80%{color: #EFD242;}
+  90%{color: EFE7B6;}
+  100%{color: #463D4C;}/*fin nuit*/
 }
