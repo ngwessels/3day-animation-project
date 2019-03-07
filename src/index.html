@@ -8,6 +8,70 @@
   </head>
   <body>
     <div class="sky">
+      <div id="comeon">
+        <div class="w3-container">
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4">
+              <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Griffon Vulture</h2>
+              </header>
+              <div class="w3-container">
+                <p>The griffon vulture is a large Old World vulture in the bird of prey family Accipitridae. It is also known as the Eurasian griffon. It is not to be confused with a different species, Rüppell's griffon vulture. It is closely related to the white-backed vulture.
+                -Altitude - 37,000ft
+                -Wingspan: 7.5 – 9.2 ft.
+                -Family: Accipitridae
+                -Conservation status: Least Concern (Population increasing) Encyclopedia of Life
+                -Scientific name: Gyps fulvus
+                -Mass: Female: 14 – 25 lbs, Male: 14 – 23 lbs</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- modal  -->
+          <a href="#openModal"></a>
+
+          <div id="openModal" class="modalDialog">
+            <div>
+              <a href="#close" title="Close" class="close">X</a>
+              <h4>The Boeing 747 is an American wide-body commercial jet airliner and cargo aircraft, often referred to by its original nickname, "Jumbo Jet". Its distinctive hump upper deck along the forward part of the aircraft has made it one of the most recognizable aircraft, and it was the first wide-body airplane produced.</h4>
+              <p>Number built: 1,548 as of December 2018</p>
+              <p>Program cost: US$1B in 1968(7.2B today)</p>
+              <p>Developed into: Boeing YAL-1; Boeing Dreamlifter</p>
+              <p>Variants: Boeing 747SP; Boeing 747-400; Boeing 747-8; Boeing VC-25; Boeing E-4</p>
+              <p>Produced: 1968–present</p>
+              <p>Primary users: British Airways; Lufthansa; Korean Air; Atlas Air</p>
+            </div>
+          </div>
+          <div class="plane">
+            <a href="#openModal"> <img src="./imgs/airplane.png" alt="airplane" height="22" width="50"></a>
+          </div>
+          <div class="vulture">
+            <a  id="vulture-button"></a><img src="./imgs/vultrfly.gif" id="vulture-photo" alt="vulture" height="48" width="48" onclick="document.getElementById('id01').style.display='block'">
+          </div>
+
+          <div class="eagle">
+            <img src="./imgs/eagle.gif" alt="eagle" height="45" width="55">
+          </div>
+
+          <div class="mallard">
+            <img src="./imgs/duck.gif" alt="mallard" height="20" width="33">
+          </div>
+          <div class="stork">
+            <img src="./imgs/stork.gif" alt="stork" height="20" width="33">
+          </div>
+          <div class="falcon">
+            <img src="./imgs/falcon.gif" alt="falcon" height="20" width="33">
+          </div>
+          <div class="goose">
+            <img src="./imgs/goose.gif" alt="goose" height="20" width="33">
+          </div>
+          <div class="jay">
+            <img src="./imgs/bluejay.gif" alt="blujay" height="20" width="33">
+          </div>
+        </div>
+      </div>
       <main class="ciel">
         <div class="etoile">
           <span>☆</span>
@@ -45,39 +109,13 @@
           <span>☆</span>
         </div>
 
-        <div id="background-wrap">
+        <div class="background-wrap">
           <div class="x1">
               <div class="cloud"></div>
-          </div>
-          <div class="plane">
-            <img src="./imgs/airplane.png" alt="airplane" height="22" width="50">
           </div>
 
           <div class="x2">
               <div class="cloud"></div>
-          </div>
-          <div class="w3-container">
-            <div id="id01" class="w3-modal">
-              <div class="w3-modal-content w3-card-4">
-                <header class="w3-container w3-teal">
-                  <span onclick="document.getElementById('id01').style.display='none'"
-                  class="w3-button w3-display-topright">&times;</span>
-                  <h2>Griffon Vulture</h2>
-                </header>
-                <div class="w3-container">
-                  <p>The griffon vulture is a large Old World vulture in the bird of prey family Accipitridae. It is also known as the Eurasian griffon. It is not to be confused with a different species, Rüppell's griffon vulture. It is closely related to the white-backed vulture.
-                  -Altitude - 37,000ft
-                  -Wingspan: 7.5 – 9.2 ft.
-                  -Family: Accipitridae
-                  -Conservation status: Least Concern (Population increasing) Encyclopedia of Life
-                  -Scientific name: Gyps fulvus
-                  -Mass: Female: 14 – 25 lbs, Male: 14 – 23 lbs</p>
-                </div>
-              </div>
-            </div>
-            <div class="vulture">
-              <a  id="vulture-button"></a><img src="./imgs/vultrfly.gif" id="vulture-photo" alt="vulture" height="48" width="48" onclick="document.getElementById('id01').style.display='block'">
-            </div>
           </div>
 
           <div class="x3">
@@ -95,26 +133,6 @@
 
         <!-- <img id="sun" src="./imgs/sun.png" alt="sun"> -->
 
-
-        <div class="eagle">
-          <img src="./imgs/eagle.gif" alt="eagle" height="45" width="55">
-        </div>
-
-        <div class="mallard">
-          <img src="./imgs/duck.gif" alt="mallard" height="20" width="33">
-        </div>
-        <div class="stork">
-          <img src="./imgs/stork.gif" alt="stork" height="20" width="33">
-        </div>
-        <div class="falcon">
-          <img src="./imgs/falcon.gif" alt="falcon" height="20" width="33">
-        </div>
-        <div class="goose">
-          <img src="./imgs/goose.gif" alt="goose" height="20" width="33">
-        </div>
-        <div class="jay">
-          <img src="./imgs/bluejay.gif" alt="blujay" height="20" width="33">
-        </div>
         <div class="soleil"></div>
         <div class="lune"></div>
       </main>
@@ -126,7 +144,14 @@
       <div class="street-stripe">
 
         <div class="veh">
-          <img class="moto" src="./imgs/buell.png" alt="moto" height="30" width="30">
+          <div id="openModalTwo" class="modalDialogTwo">
+        	<div>
+        		<a href="#close" title="Close" class="close">X</a>
+        		<h4>Buellxb12r</h4>
+        		<p>Moto</p>
+        	</div>
+        </div>
+          <a href="#openModalTwo"><img class="moto" src="./imgs/buell.png" alt="moto" height="30" width="30"></a>
           <img class="suv" src="./imgs/suv.png" alt="suv" height="30" width="60">
         </div>
       </div>
@@ -169,30 +194,27 @@
               </div>
             </div>
             <div class="scuba">
-              <img src="./imgs/suba.png" alt="SUBA" width="30" height="23">
+              <img src="./imgs/scuba.gif" alt="SUBA" width="30" height="23">
             </div>
 
             <div class="octopus">
-              <img src="./imgs/octopus.png" alt="octopus" width="50" height="40">
+              <img src="./imgs/octopus.gif" alt="octopus" width="50" height="40">
             </div>
 
             <div class="turtle">
-              <img src="./imgs/turtle.png" alt="turtle" width="40" height="60">
+              <img src="./imgs/turtle.gif" alt="turtle" width="40" height="60">
             </div>
 
             <div class="sub">
-              <img src="./imgs/sub.png" alt="sub" width="100" height="35">
+              <img src="./imgs/sub.gif" alt="sub" width="200" height="50">
             </div>
 
             <div class="lant">
-              <img src="./imgs/lant.png" alt="lant" width="30" height="28">
+              <img src="./imgs/lant.gif" alt="lant" width="100" height="28">
             </div>
 
             <div class="shark">
-              <img src="./imgs/shark.png" alt="shark" width="60" height="45">
-            </div>
-            <div class="whale">
-              <img src="./imgs/whale.png" alt="whale" width="100" height="38">
+              <img src="./imgs/shark.gif" alt="shark" width="150" height="45">
             </div>
 
             <img id="many-crabs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/79/glitch-crab.png">

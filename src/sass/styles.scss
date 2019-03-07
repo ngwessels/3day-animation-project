@@ -18,7 +18,7 @@ body {
       transform: translate(-1500px, $height);
     }
     from{
-      transform: translate(1500px, $height);
+      transform: translate(3000px, $height);
     }
   }
 
@@ -30,42 +30,51 @@ body {
 @include flies(moto, 0px);
 @include flies(eagle, 0px);
 
-$planeSpeed: random(20) + 5;
+$planeSpeed: random(10) + 20;
 $vultureSpeed: random(20) + 40;
 $suvSpeed: random(20) + 3;
 $motoSpeed: random(20) +1;
 $eagleSpeed: random(20) +60;
 
+
+
+// .w3-container {
+//   height: 100%;
+// }
 .plane{
-  display: flex;
+  position: absolute;
   overflow: hidden;
-  justify-content: center;
-  // top: 60px;
+  z-index: 2;
+  display: inline-block;
+  top: 60px;
 
   @include animate(plane, $planeSpeed + s);
 }
 
 .vulture{
-  display: flex;
+  position: absolute;
   overflow: hidden;
-  justify-content: center;
   display: inline-block;
-  // top: 60px;
+  z-index: 100000000000000000000;
+  top: 100px;
 
   @include animate(vulture, $vultureSpeed + s);
 }
 
 .eagle {
+  position: absolute;
   display: flex;
   overflow: hidden;
   justify-content: center;
   display: inline-block;
-@include animate(eagle,$eagleSpeed + s);
+  @include animate(eagle,$eagleSpeed + s);
+  top: 250px;
 }
 
 .stork {
   transform: rotateY(180deg); // Rotate 180 degrees along the x-axis
   display: inline-block;
+  position: absolute;
 }
 
 .falcon {
@@ -992,6 +1001,12 @@ html {
 
 /* OBJECTS */
 
+#comeon {
+  position: absolute;
+  height: 100vw;
+  width: 100%;
+}
+
 .cloud {
 	background: #fff;
 	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
@@ -1110,14 +1125,9 @@ html {
 
 
 
-
-
-
-
-
 .ciel, .soleil, .lune, .terre, .etoile span{
   animation-delay: 8s;
-  animation-duration:50s;
+  animation-duration:300s;
   animation-iteration-count: infinite;
   animation-timing-function:linear;
   position: relative;
@@ -1361,4 +1371,112 @@ html {
   80%{color: #EFD242;}
   90%{color: EFE7B6;}
   100%{color: #463D4C;}/*fin nuit*/
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.modalDialogTwo {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialogTwo:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialogTwo > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close2 {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close2:hover {
+  background: #00d9ff;
 }
