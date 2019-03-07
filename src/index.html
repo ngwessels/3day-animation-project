@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
+    <!-- Sky div containing everything above ground, it includes chicago image as well -->
     <div class="sky">
+      <!-- comon div contains everything above chicago image -->
       <div id="comeon">
         <div class="w3-container">
           <div id="id01" class="w3-modal">
@@ -47,17 +49,33 @@
           <div class="plane">
             <a href="#openModal"> <img src="./imgs/airplane.png" alt="airplane" height="22" width="50"></a>
           </div>
+
           <div class="vulture">
             <a  id="vulture-button"></a><img src="./imgs/vultrfly.gif" id="vulture-photo" alt="vulture" height="48" width="48" onclick="document.getElementById('id01').style.display='block'">
           </div>
 
-          <div class="eagle">
-            <img src="./imgs/eagle.gif" alt="eagle" height="45" width="55">
-          </div>
 
-          <div class="mallard">
-            <img src="./imgs/duck.gif" alt="mallard" height="20" width="33">
+
+          <div id="openModalsix" class="modalDialogsix">
+            <div>
+              <a href="#close" title="Close" class="close">X</a>
+              <h4>Eagle</h4>
+              <p>TEST</p>
+            </div>
           </div>
+          <a href="#openModalsix"><img class="eagle" src="./imgs/eagle.gif" alt="eagle" height="45" width="55"></a>
+
+
+          <div id="openModalEight" class="modalDialogEight">
+            <div>
+              <a href="#close" title="Close" class="close">X</a>
+              <h4>Mallard</h4>
+              <p>TEST</p>
+            </div>
+          </div>
+          <a href="#openModalEight"><img class="mallard" src="./imgs/duck.gif" alt="mallard" height="20" width="33"></a>
+
+
           <div class="stork">
             <img src="./imgs/stork.gif" alt="stork" height="20" width="33">
           </div>
@@ -147,12 +165,24 @@
           <div id="openModalTwo" class="modalDialogTwo">
         	<div>
         		<a href="#close" title="Close" class="close">X</a>
-        		<h4>Buellxb12r</h4>
-        		<p>Moto</p>
+            <h4>Buellxb12r</h4>
+            <p>2008 1200cc v-twin sport bike</p>
         	</div>
         </div>
           <a href="#openModalTwo"><img class="moto" src="./imgs/buell.png" alt="moto" height="30" width="30"></a>
-          <img class="suv" src="./imgs/suv.png" alt="suv" height="30" width="60">
+
+
+          <div id="openModalThree" class="modalDialogThree">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h4>Ford Expolorer</h4>
+            <p>MPG: Up to 19 city / 27 highway
+              Towing capacity: 2,000 to 5,000 lbs
+              Dimensions: 198″ L x 79″ W x 70″ H
+              Cargo volume: 21 ft³, 80.7 ft³ with seat area</p>
+          </div>
+        </div>
+          <a href="#openModalThree"><img class="suv" src="./imgs/suv.png" alt="suv" height="30" width="60"><a>
         </div>
       </div>
     </div>
@@ -189,10 +219,11 @@
                 <div class="blue-whale-color"></div>
                 <div class="blue-whale-color-bottom"></div>
               </div>
-              <div class="blue-whale-backside"><div></div></div>
+              <div class="blue-whale-backside"></div>
               <div class="blue-whale-flipper">
               </div>
             </div>
+
             <div class="scuba">
               <img src="./imgs/scuba.gif" alt="SUBA" width="30" height="23">
             </div>
@@ -201,21 +232,41 @@
               <img src="./imgs/octopus.gif" alt="octopus" width="50" height="40">
             </div>
 
-            <div class="turtle">
-              <img src="./imgs/turtle.gif" alt="turtle" width="40" height="60">
-            </div>
 
-            <div class="sub">
-              <img src="./imgs/sub.gif" alt="sub" width="200" height="50">
+
+            <div id="openModalSeven" class="modalDialogSeven">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h4>Sea Turtle</h4>
+                <p>TEST</p>
+              </div>
             </div>
+            <a href="#openModalSeven"><img class="turtle" src="./imgs/turtle.gif" alt="turtle" width="40" height="60"></a>
+
+            <div id="openModalfour" class="modalDialogfour">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h4>U571 Submarine</h4>
+                <p>German submarine U-571 was a Type VIIC U-boat built for the Kriegsmarine of Nazi Germany for service during World War II. U-571 conducted eleven war patrols, sinking seven ships totalling 47,169 gross register tons, and damaging one other, which displaced 11,394 tons.</p>
+              </div>
+            </div>
+            <a href="#openModalfour"><img class="sub" src="./imgs/sub.gif" alt="sub" width="200" height="50"></a>
+
 
             <div class="lant">
               <img src="./imgs/lant.gif" alt="lant" width="100" height="28">
             </div>
 
-            <div class="shark">
-              <img src="./imgs/shark.gif" alt="shark" width="150" height="45">
+
+            <div id="openModalfive" class="modalDialogfive">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h4>Great White Shark</h4>
+                <p>TEST</p>
+              </div>
             </div>
+            <a href="#openModalfive"><img class="shark" src="./imgs/shark.gif" alt="shark" width="150" height="45"></a>
+
 
             <img id="many-crabs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/79/glitch-crab.png">
             <div class="ocean-floor">
@@ -226,9 +277,10 @@
                 <img src="./imgs/floor.png" alt="ocean-floor">
                 <img src="./imgs/floor.png" alt="ocean-floor">
               </div>
+            </div>
 
-            </div>
-            </div>
+
+
           </div>
         </div>
       </div>
